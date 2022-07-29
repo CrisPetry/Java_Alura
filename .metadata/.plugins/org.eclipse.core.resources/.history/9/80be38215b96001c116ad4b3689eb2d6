@@ -1,0 +1,13 @@
+package br.com.alura.java.io.teste;
+
+import java.io.FileInputStream;
+
+public class TesteLeitura {
+
+	public static void main(String[] args) {
+		
+		//Fluxo de entrada de arquivos 
+		
+		FileInputStream fis = new FileInputStream("estruturadedados.txt");
+	}
+}

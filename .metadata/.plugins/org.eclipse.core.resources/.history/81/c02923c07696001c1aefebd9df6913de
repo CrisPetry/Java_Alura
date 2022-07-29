@@ -1,0 +1,21 @@
+package br.com.alura.java.io.teste;
+
+import java.io.FileWriter;
+import java.io.IOException;
+
+public class TesteEscrita2 {
+
+	public static void main(String[] args) throws IOException {
+
+//		OutputStream fos = new FileOutputStream("estruturadedados2.txt");
+//		Writer osw = new OutputStreamWriter(fos);
+//		BufferedWriter bw = new BufferedWriter(osw);
+
+		FileWriter fw = new FileWriter("estruturadedados.txt");
+		fw.write("Elden Ring é foda patroa");
+		fw.write(System.lineSeparator());
+		fw.write("Confia no pai");
+		fw.close();
+
+	}
+}

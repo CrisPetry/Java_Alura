@@ -1,0 +1,23 @@
+package br.com.alura.java.io.teste;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class TesteLeitura2 {
+
+	public static void main(String[] args) throws Exception {
+
+		Scanner teclado = new Scanner(new File("contas.csv"));
+
+
+		String linha = teclado.nextLine();
+
+		while (teclado.hasNextLine()) {
+			teclado.nextLine();
+			System.out.println(linha);
+			
+		}
+		teclado.close();
+	}
+
+}
